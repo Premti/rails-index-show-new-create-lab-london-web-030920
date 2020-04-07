@@ -5,3 +5,8 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+
+15.times do 
+    Coupon.create(coupon_code: Faker::IDNumber.spanish_foreign_citizen_number , store: Faker::FunnyName.name)
+
+end
